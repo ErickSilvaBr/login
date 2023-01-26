@@ -2,87 +2,144 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+
 }
 
 body {
     height: 100vh;
     width: 100vw;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-    background-image: url("https://static.wixstatic.com/media/704318ee9be94acabf28919a734951b8.jpg/v1/fill/w_640,h_564,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/704318ee9be94acabf28919a734951b8.jpg"); 
+
+
+    background-image: url("../imagens/aurora-boreal.jpg");
+    background-blend-mode: color;
+    background-color: rgba(0, 0, 0, 0.247);
     background-size: cover;
+    background-position: center center;
 }
 
 main {
-    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+.header-login {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+
+    text-decoration: underline #fff;
+}
+
+.logo h1 {
+    color: #fff;
+    letter-spacing: 4px;
+    font-size: 3rem;
+
+    font-variant: small-caps;
+}
+
+.imagem img {
+    width: 50px;
+}
+
+
+form {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    background-color: rgba(0, 0, 0, 0.965);
-    color: #fff;
-    border-radius: 10px;
-    padding: 2rem 0;
-}
+    width: 100vw;
 
-.logo h1 {
-    color: rgb(111, 0, 255);
-    font-weight: bold;
-    font-size: 3.5rem;
-}
-
-form {
-    width: 90%;
 }
 
 
+.email, .senha {
+    padding: .8rem 0;
+}
+
+.btn {
+    padding-top: 1rem;
+}
 
 .btn button {
-    width: 90%;
-    height: 40px;
-    outline: 0;
-    border: 2px solid #fff;
-    border-radius: 50px;
-    background-color: transparent;
-
+    padding: 9px;
+    border-radius: 20px;
+    width: 20rem;
+    border: 1px solid #fff;
     color: #fff;
-}
-
-
-
-
-input {
-    height: 30px;
-    width: 90%;
-    border: 0;
-
-    border-bottom: 2px solid #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
     outline: 0;
+
     background-color: transparent;
+    cursor: pointer;
+    transition: all .3s ease;
+}
 
+.btn button:hover {
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+}
+
+.imagens-redes-container {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.redes-sociais-container p {
     color: #fff;
+    font-weight: bold;
     font-size: 1.2rem;
-
-    
-}
-
-input::placeholder {
-    color: rgba(255, 255, 255, 0.637);
-    font-weight: lighter;
-    font-size: 1.2rem;
-    letter-spacing: 2px;
-}
-
-
-.email, .senha, .btn {
+    letter-spacing: 1px;
     padding: 1.5rem 0;
-    text-align: center;
+
 }
+
+.imagens-redes-container img {
+    width: 3rem;
+    transition: all .2s ease;
+}
+
+.imagens-redes-container img:hover {
+    transform: translate(-3px, -3px);
+}
+
+div input {
+    border: 0px ;
+    outline: 0;
+    background-color: #fff;
+
+    padding: .8rem;
+    border-radius: 20px;
+    width: 21rem;
+    padding-left: 20px;
+}
+
+div input::placeholder {
+    color: rgb(94, 94, 94);
+    letter-spacing: .5px;
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+
+span {
+    display: block;
+    height: 2rem;
+    width: 3.2px;
+
+    background-image: linear-gradient(to top, #3cff00, transparent);
+}
+
 
 
 
