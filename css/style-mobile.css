@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("https://static.wixstatic.com/media/704318ee9be94acabf28919a734951b8.jpg/v1/fill/w_640,h_564,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/704318ee9be94acabf28919a734951b8.jpg"); 
+    background-size: cover;
+}
+
+main {
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(0, 0, 0, 0.965);
+    color: #fff;
+    border-radius: 10px;
+    padding: 2rem 0;
+}
+
+.logo h1 {
+    color: rgb(111, 0, 255);
+    font-weight: bold;
+    font-size: 3.5rem;
+}
+
+form {
+    width: 90%;
+}
+
+
+
+.btn button {
+    width: 90%;
+    height: 40px;
+    outline: 0;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    background-color: transparent;
+
+    color: #fff;
+}
+
+
+
+
+input {
+    height: 30px;
+    width: 90%;
+    border: 0;
+
+    border-bottom: 2px solid #fff;
+    outline: 0;
+    background-color: transparent;
+
+    color: #fff;
+    font-size: 1.2rem;
+
+    
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.637);
+    font-weight: lighter;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+
+.email, .senha, .btn {
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+
+
+
