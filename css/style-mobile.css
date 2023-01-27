@@ -141,6 +141,51 @@ span {
     background-image: linear-gradient(to top, #3cff00, transparent);
 }
 
+/* MEDIA QUERIES */
+@media screen and (min-width: 300px) and (max-width: 374px){
+    body {
+        background-color: rgba(0, 0, 0, 0.329);
+
+    }
+    .header-login {
+        margin: 1rem 0;
+    }
+    .logo h1 {
+        font-size: 2.7rem;
+    }
+
+    .imagem img {
+        display: none;
+    }
+    .btn button {
+        width: 17rem;
+    }
+
+    .redes-sociais-container p {
+        padding: 15px;
+
+    }
+
+    .imagens-redes-container img {
+        width: 2.5rem;
+    }
+    div input {
+        width: 18rem;
+
+    }
+
+    span {
+        height: 1.5rem;
+        width: 5px;
+
+        background-image: linear-gradient(to top, #00ffbf, transparent);
+
+
+        
+    }
+    
+}
+
 
 
 
